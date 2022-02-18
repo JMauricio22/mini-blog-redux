@@ -4,7 +4,7 @@ Es un sitio web en la cual se listan usuarios, publicaciones y tareas, para ello
 El sitio se creo a manera de practica para aplicar los conceptos de Redux.
 
 ## Proyecto
-[Deploy 🚀](https://avo-app.vercel.app/)
+[Deploy 🚀](https://nifty-beaver-ee0362.netlify.app/)
 
 ## Funcionalidades
 
