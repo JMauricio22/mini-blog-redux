@@ -1,0 +1,40 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  .left {
+    margin-bottom: 1rem !important;
+    display: flex;
+    align-items: center;
+  }
+  .right > *,
+  .left > * {
+    margin-right: 5px !important;
+  }
+}
+.line-through {
+  text-decoration: line-through;
+}
+
+@mixin todo-media-queries($max-width, $min-width) {
+  @media screen and (max-width: $max-width) and (min-width: $min-width) {
+    .todo {
+      .text-truncate {
+        @content;
+      }
+    }
+  }
+}
+
+@include todo-media-queries(768px, 0) {
+  max-width: 150px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@include todo-media-queries(992px, 768px) {
+  max-width: 450px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
